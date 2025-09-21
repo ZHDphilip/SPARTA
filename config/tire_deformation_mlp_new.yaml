@@ -1,0 +1,66 @@
+# =============================== #
+# Network Architecture Parameters #
+# =============================== #
+network:
+  model_type: "mlp"
+  voxel_size: [0.10, 0.10, 0.5]
+  point_cloud_range: [-0.5, -0.5, 0, 0.5, 0.5, 0.5]
+  max_num_points: 32
+  max_voxels: [100, 100]
+  pointpillar_in_channel: 8
+  pointpillar_out_channel: 32
+  num_bins: 8
+  pcd_backbone:
+    in_channels: [32, 64, 128]
+    out_channels: [64, 128, 256]
+    stride: [2 ,2, 1]
+    kernel_size: [3, 3, 3]
+    padding: [1, 1, 0]
+  heading_backbone:
+    input_dim: 1
+    hidden_dims: 16
+    output_dim: 32
+  head:
+    input_dim: 288
+    hidden_dims: 64
+    output_dim: 8
+
+# ================================== #
+#         Dataset Parameters         #
+# ================================== #
+dataset:
+  mode: "mlp"
+  base_dir: "./beamng_dataset/tech_ground_deformation_distribution_raw"
+  max_points_per_object: 1024
+  angles_per_object: 8
+  add_noise: True
+  raw_deformation: True
+  num_bins: 8
+  min_deformation: 0.2
+  max_deformation: 1.0
+  noise_config: 
+    p_grass: 0.05
+    min_grass_height: 0.05
+    mean_grass_height: 0.15
+    std_grass_height: 0.05
+    points_per_blade: 10
+    max_noise_scale: 0.05
+
+# =================================== #
+#          Training Parameter         #
+# =================================== #
+train:
+  experiment_name: "tire_deformation_mlp_new"
+  logdir: "./log/"
+  ckpt_dir: "./checkpoints/"
+  epochs: 50
+  batch_size: 128
+  start_lr: 0.00001
+  max_lr:   0.00005
+  end_lr:   0.0000001
+  pct_start: 0.1
+  anneal_strategy: "cos"
+  momentum: 0.9
+  weight_decay: 0.0001
+  regularizer_weight: 0.2
+  loss: "EMD2"
