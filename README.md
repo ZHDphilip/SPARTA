@@ -125,7 +125,7 @@ and consistently choose the risky path then the goal is to its right.
 <p align='center'>
     <img src="./asset/ours_(0,5.5).png" width=240>
     <img src="./asset/ours_(1,5.5).png" width=240>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
     <img src="./asset/elev_(0,5.5).png" width=240>
     <img src="./asset/elev_(1,5.5).png" width=240>
 </p>
