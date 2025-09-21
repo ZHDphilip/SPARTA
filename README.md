@@ -34,7 +34,7 @@ In our paper **SPARTA**, we propose a novel method to predict traversability con
 minimal computation overhead for any angle of approach at any timestep when integrated with modern planners
 like MPPI. This repositiory contains the official training pipeline, model checkpoints, and a simulated experiment using unicycle dynamics. 
 
-https://github.com/neu-autonomy/SPARTA/blob/main/asset/CoRL_Spotlight_Video.mp4
+https://github.com/user-attachments/assets/db80e006-8f6f-4e85-86b0-2b9b5f02a342
 
 </br>
 <p align='center'>
