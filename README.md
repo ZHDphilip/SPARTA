@@ -22,8 +22,7 @@
     <a href="https://neu-autonomy.github.io/lab_website/">Michael Everett</a><sup>1</sup>
 </span>
 
-<sup>1</sup>Northeastern Univeristy, <sup>2</sup>University of Michigan, Ann Arbor  
-<sup>3</sup> DEVCOM Army Research Laboratory (ARL)
+<sup>1</sup>Northeastern Univeristy, <sup>2</sup>University of Michigan, Ann Arbor, <sup>3</sup> DEVCOM Army Research Laboratory (ARL)
 
 Official Repository for CoRL 2025 paper: [Learning Smooth State-Dependent Traversability from Dense Point Clouds](https://arxiv.org/pdf/2506.04362).
 
@@ -38,7 +37,7 @@ like MPPI. This repositiory contains the official training pipeline, model check
 </br>
 <p align='center'>
     <video controls autoplay loop muted playsinline width="720">
-        <source src="./asset/CoRL_Spotlight_Video.mp4" type="video/mp4">
+        <source src="https://github.com/neu-autonomy/SPARTA/blob/main/asset/CoRL_Spotlight_Video.mp4" type="video/mp4">
         Download the video above if it doesn’t play.
     </video> </br>
     <img src="./asset/pipeline.png" width="720">
